@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define que o conteúdo da página está em português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, para suportar acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo em dispositivos móveis -->
+    <title>Contato</title> <!-- Título da página, que aparece na aba do navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula o arquivo de estilo (CSS) para estilizar o conteúdo -->
+</head>
+<body>
+
+    <!-- Início do Cabeçalho -->
+    <header>
+        <h1 class="h1-contato">Entre em Contato</h1> <!-- Título principal da página de contato -->
+        <nav>
+            <!-- Menu de navegação -->
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link para a página inicial -->
+                <li><a href="materias.html">Matérias</a></li> <!-- Link para a página de matérias -->
+                <li><a href="contato.html">Contato</a></li> <!-- Link para a própria página de contato -->
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim do Cabeçalho -->
+
+    <!-- Início da Seção de Contato -->
+    <section id="contato">
+        <h2>Formulário de Contato</h2> <!-- Título da seção do formulário -->
+        <form action="#" method="post"> <!-- Formulário de contato. 'action="#"' significa que os dados não serão enviados para lugar nenhum por enquanto -->
+            
+            <!-- Campo para o nome -->
+            <label for="nome">Nome:</label> <!-- A etiqueta que indica o que o usuário deve preencher -->
+            <input type="text" id="nome" name="nome" required> <!-- Campo de entrada de texto para o nome. O atributo 'required' faz com que o campo seja obrigatório -->
+
+            <!-- Campo para o email -->
+            <label for="email">Email:</label> <!-- A etiqueta que indica o que o usuário deve preencher -->
+            <input type="email" id="email" name="email" required> <!-- Campo de entrada para o email. O tipo 'email' permite validação automática de email -->
+
+            <!-- Campo para a mensagem -->
+            <label for="mensagem">Mensagem:</label> <!-- A etiqueta que indica o que o usuário deve preencher -->
+            <textarea id="mensagem" name="mensagem" required></textarea> <!-- Campo de texto multi-linhas para a mensagem. O 'textarea' permite mais espaço para o usuário escrever -->
+
+            <!-- Botão para enviar o formulário -->
+            <button type="submit">Enviar</button> <!-- Botão que envia o formulário -->
+        </form>
+    </section>
+    <!-- Fim da Seção de Contato -->
+
+    <!-- Início do Rodapé -->
+    <footer>
+        <p>&copy; 2025 Meu Site de Matérias</p> <!-- Copyright do site -->
+    </footer>
+    <!-- Fim do Rodapé -->
+
+    <!-- Vincula o arquivo JavaScript -->
+    <script src="js/scripts.js"></script> <!-- Chama o arquivo de JavaScript para adicionar funcionalidades interativas -->
+
+</body>
+</html>
